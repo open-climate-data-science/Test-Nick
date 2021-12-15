@@ -9,3 +9,4 @@ summary(model1)
 # I added some R code
 plot(vec,vec2)
 abline(model1)
+
