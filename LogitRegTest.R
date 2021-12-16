@@ -40,3 +40,14 @@ lines(lowess(irissub$ISversi~irissub$Sepal.Length),col="green")
 # Logit regression curve
 lines(irissub$Sepal.Length[order(irissub$Sepal.Length)], fitted(model1)[order(irissub$Sepal.Length)],lty=2,col="blue")
 
+
+
+
+
+
+
+### Simple regression in R for iris, change to penguin
+library(ggplot2)
+ggplot(iris,aes(x=Sepal.Length,y=Petal.Length,colour=Species,shape =Species))+
+  geom_point()+
+  geom_smooth(method='lm',formula=y~x,se = FALSE)
